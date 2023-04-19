@@ -1,6 +1,5 @@
 import streamlit
-streamlit.title("First streamlit App") 
-streamlit.header("Breakfast Meenu")
-streamlit.text("Omlette with Tomato sauce")
-streamlit.text("Cabbage with Mayoneese ")
-streamlit.text("Perfact protien diet")
+treamlit.header('Breakfast Menu')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
+streamlit.text('Kale, Spinach & Rocket Smoothie')
+streamlit.text('Hard-Boiled Free-Range Egg')
