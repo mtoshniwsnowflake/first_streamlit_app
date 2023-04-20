@@ -1,6 +1,6 @@
 import streamlit
 import pandas as pd
-import request
+import requests
 streamlit.header(' 🥣 Breakfast Menu')
 streamlit.text(' 🥗 Omega 3\'s & Blueberry Oatmeal')
 streamlit.text(' 🐔 Kale, Spinach & Rocket Smoothie')
@@ -18,5 +18,5 @@ streamlit.dataframe(my_fruit_list)
 streamlit.header("Fruityvice Fruit Advice!")
 
 # Read data from FruityVice
-fruity_response = request.get("https://fruityvice.com/api/fruit/watermelon")
+fruity_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruity_response)
