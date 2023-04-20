@@ -19,4 +19,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 # Read data from FruityVice
 fruity_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruity_response.json())
+#streamlit.text(fruity_response.json())
+fruity_response_normalize = pd.json_normalize(fruity_response.json())
+streamlit.dataframe(fruity_response_normalize)
+
