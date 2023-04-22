@@ -36,3 +36,7 @@ streamlit.header("The Fruit Load list contains:")
 #streamlit.text("Hello from Snowflake:")
 streamlit.dataframe(my_data)
 
+# Let's put a pick list here so they can pick the fruit they want to include 
+#streamlit.text("What fruit would you like to choose:")
+fruit_sel = streamlit.multiselect("What fruit would you like to choose:", list(my_data.index))
+streamlit.txt("fruit selected"+fruit_sel)
