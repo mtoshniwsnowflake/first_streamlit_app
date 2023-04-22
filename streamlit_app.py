@@ -38,5 +38,5 @@ streamlit.dataframe(my_data)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 #streamlit.text("What fruit would you like to choose:")
-fruit_sel = streamlit.text_input("What fruit would you like information about?")
-streamlit.write("fruit selected"+fruit_sel)
+fruit_sel = streamlit.text_input("What fruit would you like to Add")
+streamlit.write("Thanks for adding: "+fruit_sel)
